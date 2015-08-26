@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		script(src="bower_components/wow/dist/wow.min.js")
+		script.
+			new WOW().init();
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main
+					.row
+						.col-md-6.contacts
+							h4.title Обратная связь
+							form
+								.row
+									.col-md-6
+										.group
+											label Имя
+											input(type="text")
+									.col-md-6
+										.group
+											label E-mail
+											input(type="email")
+								.group
+									label Сообщение
+									textarea
+								.group
+									label Код с картинки
+									input(type="text" style="width: 30%; margin: 0 15px;")
+									span.title ebDn
+								button.btn.btn-primary(style="margin-top: 30px;") Отправить
+						.col-md-4.col-md-offset-2.text-center(style="padding: 30px")
+							img.wow.fadeIn(src="images/phone.jpg", alt="")
+							h4(style="font-size: 16px;") Телефон информационной поддержки:
+							h3.text-secondary <span style="font-size: 18px">+7 988</span> 700-50-50
+							a.text-secondary(href="info@fartmoney.ru") info@fartmoney.ru
+				include footer.jade
+
+
+		include footer-libs.jade

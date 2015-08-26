@@ -1,0 +1,22 @@
+script(src="bower_components/jquery/dist/jquery.min.js")
+script(src="bower_components/flipcountdown/jquery.flipcountdown.js")
+script.
+	$(function(){
+		$('.counter').flipcountdown({
+			size: "sm",
+			showSecond:false
+		});
+	})
+link(rel="stylesheet", href="bower_components/magnific-popup/dist/magnific-popup.css")
+script(src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js")
+script(src="js/script.js")
+script.
+	$('.ajax-popup-link').magnificPopup({
+		type: 'ajax',
+		//- callbacks: {
+		//- 	beforeClose: function() {
+		//- 		//- $('.modal').css('animation', 'fadeInUp .5s');
+		//- 		//- console.log('fdsg')
+		//- 	},
+		//- }
+	});

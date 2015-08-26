@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		script(src="bower_components/wow/dist/wow.min.js")
+		script.
+			new WOW().init();
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main
+					include nav-content.jade
+					.row
+						.col-md-7
+							.user-form
+								.row
+									.col-md-3
+										p Имя
+									.col-md-9
+										input(type="text")
+								.row
+									.col-md-3
+										p Фамилия
+									.col-md-9
+										input(type="text")
+								.row
+									.col-md-3
+										p Дата рождения
+									.col-md-9
+										input(type="text")
+								.row
+									.col-md-3
+										p Пол
+									.col-md-9
+										.radio-div
+											label <input type="radio" name="gender"> Мужской
+										.radio-div
+											label <input type="radio" name="gender"> Женский
+								.row
+									.col-md-3
+										p Телефон
+									.col-md-9
+										input(type="text")
+								.row
+									.col-md-3
+										p Эл.почта
+									.col-md-9
+										input(type="text")
+								.row
+									.col-md-3
+										p Пароль
+									.col-md-9
+										.row
+											.col-md-4
+												input(type="text")
+											.col-md-4
+												p Повторите пароль
+											.col-md-4
+												input(type="text")
+								button.btn.btn-primary Отправить
+
+						.col-md-4.col-md-offset-1.user-info
+							.user.clearfix(style="float: left; margin-right: 10px; margin-top: 0;")
+								img.user-img-hide(src="images/user-1.jpg", alt="")
+								.user-img(style="margin-top: 0;")
+							br
+							label.btn.btn-primary(for="load-photo") Загрузить
+							input(id="load-photo" type="file")
+							//- img(alt="" id="image_preview")
+							.clearfix
+							h4 Связанные аккаунты
+							.socials
+								a(href="#")
+									img(src="images/facebook.png", alt="")
+								a(href="#")
+									img(src="images/ok.png", alt="")
+								a(href="#")
+									img(src="images/vk.png", alt="")
+							label <input type="checkbox"> Получать рассылку акций и новостей
+
+				include footer.jade
+
+
+		include footer-libs.jade

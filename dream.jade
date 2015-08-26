@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		script(src="bower_components/wow/dist/wow.min.js")
+		link(rel="stylesheet", href="bower_components/fontawesome/css/font-awesome.min.css")
+		script.
+			new WOW().init();
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main.dreams
+					.row
+						.col-md-8
+							.dream
+								.dream-head.clearfix
+									.date
+										small 16 июня 2015, 16:00
+									.user
+										img.user-img-hide(src="images/user-1.jpg", alt="")
+										.user-img
+										h4 Марина Мнишек
+										h5 Сыграно 237 игр
+									.views
+										i.fa.fa-comment
+										span 123
+										i.fa.fa-eye
+										span 33
+								.dream-content
+									.dream-image
+										img(src="images/dream-1.jpg", alt="")
+									a.dream-title(href="dream-more.html")
+										h1 Хочу в Ferrari Enzo
+									p Ferrari Enzo построен вокруг гоночного болида, с явно выраженными «клювом» и «лопатой», и таким же, как у гоночных машин, боковыми воздухозаборниками для радиаторов и тормозов. 
+								.dream-footer
+									.social-list
+										img(src="images/socials.png", alt="")
+									a(href="#").closer
+										img(src="images/symbol-3.jpg", alt="")
+										p Приблизить к мечте
+							.dream
+								.dream-head.clearfix
+									.date
+										small 16 июня 2015, 16:00
+									.user
+										img.user-img-hide(src="images/user-2.jpg", alt="")
+										.user-img
+										h4 Федор Конюхов
+										h5 Сыграно 116 игр
+									.views
+										i.fa.fa-comment
+										span 123
+										i.fa.fa-eye
+										span 33
+								.dream-content
+									.dream-image
+										img(src="images/dream-2.jpg", alt="")
+									a.dream-title(href="dream-more.html")
+										h1 Хочу Буренку
+									p У коров короткая массивная шея. Хвост длинный, толстый, с кисточкой на конце, расположен высоко в углублении между костями таза. Спина слегка вогнута. У зебу на спине имеется горб, который начинается сразу позади шеи. Таз выдаётся, бёдра массивные и плоские.
+								.dream-footer
+									.social-list
+										img(src="images/socials.png", alt="")
+									a(href="#").closer
+										img(src="images/symbol-2.jpg", alt="")
+										p Приблизить к мечте
+						.col-md-3.col-md-offset-1
+							.tags
+								h1 Бразилия
+								h2 Автомобиль
+								h4 Стиралка
+								h3 Сушка
+							.side-dream
+								.user.clearfix
+									img.user-img-hide(src="images/user-3.jpg", alt="")
+									.user-img
+									h4 Мартин Фрей
+									h5 Сыграно 24 игр
+								h1 Мне бы — трактор Беларусь
+								i Минитрактор Беларус 132Н способен осуществлять практически все работы, выполняемые полноценными тракторами: культивация, пахота, сенокошение, междурядная обработка, транспортировка грузов и многое-многое другое.
+								br
+								.side-dream-views
+									i.fa.fa-comment
+									span 123
+									i.fa.fa-eye
+									span 33
+
+					.dream-switcher
+						.switch.active
+							a(href="#") 1
+						.switch
+							a(href="#") 2
+						.switch
+							a(href="#") 3
+						.switch
+							a(href="#") 4
+						.switch
+							a(href="#") 5
+						.switch
+							a(href="#") 6
+						.switch
+							a(href="#") 7
+						.switch
+							a(href="#") 8
+						.switch
+							a(href="#") 9
+						.switch
+							a(href="#") 10
+						.switch
+							a(href="#") ...
+						.switch
+							a(href="#") 71
+						.switch
+							a(href="#") 72
+
+				include footer.jade
+
+
+		include footer-libs.jade

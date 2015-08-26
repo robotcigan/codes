@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main
+					.row
+						.col-md-3
+							.box
+								img(src="images/10.jpg", alt="")
+								.box-content
+									h3
+										a(href="#") Фартовая десятка
+									p Зарегистрированно в
+									p игре 5 игроков
+									span Выигрыш
+									.winning-sum 50 Р
+									.bg
+									p Розыгрыш через:
+									.counter
+						.col-md-3
+							.box
+								img(src="images/50.jpg", alt="")
+								.box-content
+									h3
+										a(href="#") Удачный полтинник
+									p Зарегистрированно в
+									p игре 5 игроков
+									span Выигрыш
+									.winning-sum 500 Р
+									.bg
+									p Розыгрыш через:
+									.counter
+						.col-md-3
+							.box
+								img(src="images/100.jpg", alt="")
+								.box-content
+									h3
+										a(href="#") Счастливая сотня
+									p Зарегистрированно в
+									p игре 5 игроков
+									span Выигрыш
+									.winning-sum 2000 Р
+									.bg
+									p Розыгрыш через:
+									.counter
+						.col-md-3
+							.box
+								img(src="images/500.jpg", alt="")
+								.box-content
+									h3
+										a(href="#") Супер пятихатка
+									p Зарегистрированно в
+									p игре 5 игроков
+									span Выигрыш
+									.winning-sum 5000 Р
+									.bg
+									p Розыгрыш через:
+									.counter
+				include footer.jade
+
+
+		include footer-libs.jade

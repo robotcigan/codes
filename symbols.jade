@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		script(src="bower_components/wow/dist/wow.min.js")
+		script.
+			new WOW().init();
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main
+					include nav-content.jade
+					.row
+						.col-md-8.symbols-info
+							p Символы удачи — это бесплатная возможность испытать удачу на нашем сайте! Подарочные символы вы можете получить разными способами. Участвуйте в наших регулярных акциях, побеждайте в конкурсах, оставляйте записи в разделе «Ваши мечты»! Присоединяйтесь к веселой и увлекательной лотерейной жизни «Фартмани», получайте подарочные символы, играйте бесплатно и выигрывайте!
+							br
+							p Присоединяйтесь к веселой и увлекательной лотерейной жизни «Фартмани», получайте подарочные символы, играйте бесплатно и выигрывайте!
+							br
+							.row
+								.col-md-1
+									img.wow.fadeIn.symbol(src="images/symbol-1.jpg", alt="" data-wow-delay="0.3s")
+								.col-md-1
+									img.wow.fadeIn.symbol(src="images/symbol-2.jpg", alt="" data-wow-delay="0.6s")
+								.col-md-1
+									img.wow.fadeIn.symbol(src="images/clover.jpg", alt="" data-wow-delay="0.9s")
+							br
+							p Любой символ дает вам +10% к вероятности выпадения ваших чисел
+						.col-md-4.text-center
+							img.wow.fadeIn.symbol-big(src="images/clover.jpg", alt="")
+							p <b>У вас:</b> 3 символа
+				include footer.jade
+
+
+		include footer-libs.jade
+		script(src="js/script.js")

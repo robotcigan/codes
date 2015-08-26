@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		script(src="bower_components/wow/dist/wow.min.js")
+		script.
+			new WOW().init();
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main
+					include nav-content.jade
+					.row.top-60
+						.col-md-8
+							p Это ваш личный счет на сайте <b>fartmoney.ru</b>, простой и удобный инструмент оплаты лотерейных ставок и получения выигрышей. Пополнить Кошелек можно электронными деньгами, банковской картой, через платежные терминалы, со счета мобильного телефона, а также наличными через банк.
+							.row.wallet-info
+								.col-md-6
+									h3 Пополнить счет
+									ul
+										li
+											img(src="images/visa.jpg", alt="")
+											a(href="#") Пластиковой картой
+										li
+											img(src="images/qiwi.jpg", alt="")
+											a(href="#") Киви-кошелек
+										li
+											img(src="images/qiwi-2.jpg", alt="")
+											a(href="#") Через платежный терминал
+										li
+											img(src="images/yandex.jpg", alt="")
+											a(href="#") Яндекс.Деньгами
+								.col-md-6
+									h3 Вывести деньги
+									ul
+										li
+											img(src="images/qiwi-2.jpg", alt="")
+											a(href="#") Пластиковой картой
+										li
+											img(src="images/yandex.jpg", alt="")
+											a(href="#") Киви-кошелек
+										li
+											img(src="images/web-money.jpg", alt="")
+											a(href="#") Через платежный терминал
+						.col-md-4.text-center
+							img.wow.fadeIn(src="images/wallet.jpg", alt="")
+							h3(style="font-family: 'PT Sans Narrow', sans-serif; margin-top: -10px;") В кошельке
+							h3.sum 1200 ₽
+							h5 Номер кошелька:
+							p.text-muted 1243 3432 423
+				include footer.jade
+
+
+		include footer-libs.jade

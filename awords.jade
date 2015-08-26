@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Document
+		link(rel="stylesheet", href="bower_components/normalize.css")
+		link(rel="stylesheet", href="css/bootstrap-grid-typography.min.css")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		//- script(src="bower_components/parallax/deploy/parallax.min.js")
+		link(rel="stylesheet", href="bower_components/flipcountdown/jquery.flipcountdown.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		script(src="bower_components/wow/dist/wow.min.js")
+		script.
+			new WOW().init();
+	body
+		.gradient
+		.page
+			include header.jade
+			.container
+				main
+					include nav-content.jade
+					.row
+						.col-md-8
+							h4.content-title Играйте, выигрывайте, получайте достижения и символы удачи!
+							.aword-info
+								p Играя в каждую из моментальных лотерей вы получаете достижения и награды. Каждая новая номинация — новый повод гордиться собой. А также делиться своим достижением в социальных сетях. Получение большинства статусов зависит только от ваших усилий. Для обладания очень немногими нужно всего лишь прибавить удачи.
+								.row.awords-list
+									.col-md-4
+										img.wow.fadeIn(src="images/aword-1.jpg", alt="")
+										h5 Без подготовки
+										p 10 максимальных выигрышей в любую игру в течение месяца после регистрации
+									.col-md-4
+										img.wow.fadeIn(src="images/aword-2.jpg", alt="" data-wow-delay="0.3s")
+										h5 Повелитель чисел
+										p 50 и более выигрышных комбинаций в любую игру в течение месяца 
+									.col-md-4
+										img.wow.fadeIn(src="images/aword-3.jpg", alt="" data-wow-delay="0.6s")
+										h5 Одержимый
+										p 500 и более игр, сыгранных без исользования символов удачи в течение месяца 
+						.col-md-4.text-center(style="padding-top: 55px;")
+							img.wow.fadeIn(src="images/aword-main.jpg", alt="")
+							h5 Фартовый
+							p Сыграй 1000 игр и получи титул «Фартовый» и символы удачи на 100 игр
+				include footer.jade
+
+
+		include footer-libs.jade
